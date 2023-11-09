@@ -10,7 +10,7 @@ if (!$enlace) {
     echo "error de depuración: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
-/* Preparar una sentencia INSERT */
+/* Preparar una sentencia DELETE */
 $consulta = "DELETE FROM carros WHERE placas=?";
 $sentencia = mysqli_prepare($enlace, $consulta);
 
