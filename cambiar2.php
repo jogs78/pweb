@@ -12,7 +12,7 @@ if (!$enlace) {
     echo "error de depuración: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
-/* Preparar una sentencia INSERT */
+/* Preparar una sentencia UPDATE */
 $consulta = "UPDATE carros SET precio=?, descripcion=? WHERE placas=?";
 $sentencia = mysqli_prepare($enlace, $consulta);
 
